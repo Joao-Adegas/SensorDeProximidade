@@ -1,0 +1,3 @@
+nome da planilha: Relatório Sensor de Proximidade
+url da planilha: https://docs.google.com/spreadsheets/d/1umwznJMTiUGM_xR0y5WIyn8MFcMVQ_6MOh_LT4Wr_eo/edit?gid=0#gid=0
+nome da pagina da planilha: Página1

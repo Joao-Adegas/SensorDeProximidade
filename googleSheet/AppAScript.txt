@@ -1,0 +1,19 @@
+function doGet(e) {
+  // ID da planilha — substitua pelo ID correto da sua planilha do Google Sheets
+  var ss = SpreadsheetApp.openById("1umwznJMTiUGM_xR0y5WIyn8MFcMVQ_6MOh_LT4Wr_eo"); // 👈 Atualize aqui
+
+  // Nome da aba onde os dados serão gravados
+  var sheet = ss.getSheetByName("Página1");
+
+  // Captura o parâmetro enviado pelo ESP
+  var distancia = e.parameter.distancia;
+
+  // Captura data e hora atual
+  var dataHora = new Date();
+
+  // Adiciona nova linha com os dados
+  sheet.appendRow([dataHora, distancia]);
+
+  // Retorna resposta simples
+  return ContentService.createTextOutput("OK");
+}
